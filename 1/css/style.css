@@ -1,0 +1,145 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  height: 600px;
+}
+
+.square-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.square {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border: 8px solid #000;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.square6 {
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.circle-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.circle-row.square2-circle-row1 {
+  justify-content: start;
+}
+
+.circle-row.square2-circle-row2 {
+  justify-content: flex-end;
+}
+
+.circle-row.square4-circle-row1 {
+  justify-content: start;
+}
+
+.circle-row.square4-circle-row2 {
+  justify-content: center;
+}
+
+.circle-row.square4-circle-row3 {
+  justify-content: flex-end;
+}
+
+@media (max-width: 450px) {
+  .square {
+    width: 80px;
+    height: 80px;
+    border: 5px solid #000;
+    padding: 3px;
+  }
+
+  .circle {
+    width: 20px;
+    height: 20px;
+  }
+
+  .wrapper {
+    height: 500px;
+  }
+}
+
+@media (max-width: 350px) {
+  .square {
+    width: 70px;
+    height: 70px;
+    border: 3px solid #000;
+    padding: 3px;
+  }
+
+  .circle {
+    width: 15px;
+    height: 15px;
+  }
+
+  .wrapper {
+    height: 400px;
+  }
+}
+
+@media (max-width: 350px) {
+  .square {
+    width: 60px;
+    height: 60px;
+    border: 3px solid #000;
+    padding: 3px;
+  }
+
+  .circle {
+    width: 13px;
+    height: 13px;
+  }
+
+  .wrapper {
+    height: 300px;
+  }
+}
+
+@media (max-width: 250px) {
+  .square {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #000;
+    padding: 3px;
+  }
+
+  .circle {
+    width: 10px;
+    height: 10px;
+  }
+
+  .wrapper {
+    height: 280px;
+  }
+}

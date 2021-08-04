@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login form</title>
+  <link rel="icon" href="img/login-icon-3049-Windows.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+
+<body>
+  <div class="form-wrapper">
+    <h1 class="form-title">
+      Stackfindover
+    </h1>
+    <form action="/" method="GET" id="form" class="login-form"> 
+      <p class="login-form-text">
+        Sign in to your account
+      </p>
+      <div class="login-form-field">
+        <p class="login-form-field-text text">
+          Email
+        </p>
+        <input type="text" id="email" name="email" required>
+      </div>
+      <div class="login-form-field">
+        <div class="login-form-field-text text">
+          <span class="login-form-field-name">
+            Password
+          </span>
+          <a class="forgot text" href="https://www.google.com/">
+            Forgot your password?
+          </a>
+        </div>
+        <input type="password" id="password" name="password" required>
+        <div id="error" class="error text"></div>
+      </div>
+      <label class="check" for="signed">
+        <input type="checkbox" id="signed" name="signed" required>
+        <span class="text">
+          Stay signed in for a week
+        </span>
+      </label>
+      <button class="btn-continue text" type="submit">
+        Continue
+      </button>
+      <a class="single-singon text" href="https://www.google.com.ua/maps/@50.4851493,30.4721233,14z?hl=ru">
+        Use single sing-on (Google) instead
+      </a>
+    </form>
+    <p class="footer-text">
+      Don't have an account? <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1600506847&extra_1=s%7Cc%7C515922865595%7Ce%7Cfacebook%7C&placement=&creative=515922865595&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1600506847%26adgroupid%3D60825662376%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1012869%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjw9aiIBhA1EiwAJ_GTSqulOYm7DeThnrnF4HHhisYQTHeQla154I6mLSc0jfTxfx3UCc-kcBoCSDcQAvD_BwE">Sign up</a>
+    </p>
+  </div>
+</body>
+</html>
